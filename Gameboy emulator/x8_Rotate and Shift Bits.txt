@@ -1,0 +1,4 @@
+0x07:"RLCA" null,null
+0x0f:"RRCA" null,null
+0x17:"RLA" null,null
+0x1f:"RRA" null,null

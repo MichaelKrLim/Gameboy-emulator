@@ -1,0 +1,371 @@
+switch(instruction)
+{
+	case opcode::INC_B:
+	{
+		break;
+	}
+	case opcode::DEC_B:
+	{
+		break;
+	}
+	case opcode::INC_C:
+	{
+		break;
+	}
+	case opcode::DEC_C:
+	{
+		break;
+	}
+	case opcode::INC_D:
+	{
+		break;
+	}
+	case opcode::DEC_D:
+	{
+		break;
+	}
+	case opcode::INC_E:
+	{
+		break;
+	}
+	case opcode::DEC_E:
+	{
+		break;
+	}
+	case opcode::INC_H:
+	{
+		break;
+	}
+	case opcode::DEC_H:
+	{
+		break;
+	}
+	case opcode::DAA:
+	{
+		break;
+	}
+	case opcode::INC_L:
+	{
+		break;
+	}
+	case opcode::DEC_L:
+	{
+		break;
+	}
+	case opcode::CPL:
+	{
+		break;
+	}
+	case opcode::INC_iHL:
+	{
+		break;
+	}
+	case opcode::DEC_iHL:
+	{
+		break;
+	}
+	case opcode::SCF:
+	{
+		break;
+	}
+	case opcode::INC_A:
+	{
+		break;
+	}
+	case opcode::DEC_A:
+	{
+		break;
+	}
+	case opcode::CCF:
+	{
+		break;
+	}
+	case opcode::ADD_A_B:
+	{
+		break;
+	}
+	case opcode::ADD_A_C:
+	{
+		break;
+	}
+	case opcode::ADD_A_D:
+	{
+		break;
+	}
+	case opcode::ADD_A_E:
+	{
+		break;
+	}
+	case opcode::ADD_A_H:
+	{
+		break;
+	}
+	case opcode::ADD_A_L:
+	{
+		break;
+	}
+	case opcode::ADD_A_iHL:
+	{
+		break;
+	}
+	case opcode::ADD_A_A:
+	{
+		break;
+	}
+	case opcode::ADC_A_B:
+	{
+		break;
+	}
+	case opcode::ADC_A_C:
+	{
+		break;
+	}
+	case opcode::ADC_A_D:
+	{
+		break;
+	}
+	case opcode::ADC_A_E:
+	{
+		break;
+	}
+	case opcode::ADC_A_H:
+	{
+		break;
+	}
+	case opcode::ADC_A_L:
+	{
+		break;
+	}
+	case opcode::ADC_A_iHL:
+	{
+		break;
+	}
+	case opcode::ADC_A_A:
+	{
+		break;
+	}
+	case opcode::SUB_B:
+	{
+		break;
+	}
+	case opcode::SUB_C:
+	{
+		break;
+	}
+	case opcode::SUB_D:
+	{
+		break;
+	}
+	case opcode::SUB_E:
+	{
+		break;
+	}
+	case opcode::SUB_H:
+	{
+		break;
+	}
+	case opcode::SUB_L:
+	{
+		break;
+	}
+	case opcode::SUB_iHL:
+	{
+		break;
+	}
+	case opcode::SUB_A:
+	{
+		break;
+	}
+	case opcode::SBC_A_B:
+	{
+		break;
+	}
+	case opcode::SBC_A_C:
+	{
+		break;
+	}
+	case opcode::SBC_A_D:
+	{
+		break;
+	}
+	case opcode::SBC_A_E:
+	{
+		break;
+	}
+	case opcode::SBC_A_H:
+	{
+		break;
+	}
+	case opcode::SBC_A_L:
+	{
+		break;
+	}
+	case opcode::SBC_A_iHL:
+	{
+		break;
+	}
+	case opcode::SBC_A_A:
+	{
+		break;
+	}
+	case opcode::AND_B:
+	{
+		break;
+	}
+	case opcode::AND_C:
+	{
+		break;
+	}
+	case opcode::AND_D:
+	{
+		break;
+	}
+	case opcode::AND_E:
+	{
+		break;
+	}
+	case opcode::AND_H:
+	{
+		break;
+	}
+	case opcode::AND_L:
+	{
+		break;
+	}
+	case opcode::AND_iHL:
+	{
+		break;
+	}
+	case opcode::AND_A:
+	{
+		break;
+	}
+	case opcode::XOR_B:
+	{
+		break;
+	}
+	case opcode::XOR_C:
+	{
+		break;
+	}
+	case opcode::XOR_D:
+	{
+		break;
+	}
+	case opcode::XOR_E:
+	{
+		break;
+	}
+	case opcode::XOR_H:
+	{
+		break;
+	}
+	case opcode::XOR_L:
+	{
+		break;
+	}
+	case opcode::XOR_iHL:
+	{
+		break;
+	}
+	case opcode::XOR_A:
+	{
+		break;
+	}
+	case opcode::OR_B:
+	{
+		break;
+	}
+	case opcode::OR_C:
+	{
+		break;
+	}
+	case opcode::OR_D:
+	{
+		break;
+	}
+	case opcode::OR_E:
+	{
+		break;
+	}
+	case opcode::OR_H:
+	{
+		break;
+	}
+	case opcode::OR_L:
+	{
+		break;
+	}
+	case opcode::OR_iHL:
+	{
+		break;
+	}
+	case opcode::OR_A:
+	{
+		break;
+	}
+	case opcode::CP_B:
+	{
+		break;
+	}
+	case opcode::CP_C:
+	{
+		break;
+	}
+	case opcode::CP_D:
+	{
+		break;
+	}
+	case opcode::CP_E:
+	{
+		break;
+	}
+	case opcode::CP_H:
+	{
+		break;
+	}
+	case opcode::CP_L:
+	{
+		break;
+	}
+	case opcode::CP_iHL:
+	{
+		break;
+	}
+	case opcode::CP_A:
+	{
+		break;
+	}
+	case opcode::ADD_A_d8:
+	{
+		break;
+	}
+	case opcode::ADC_A_d8:
+	{
+		break;
+	}
+	case opcode::SUB_d8:
+	{
+		break;
+	}
+	case opcode::SBC_A_d8:
+	{
+		break;
+	}
+	case opcode::AND_d8:
+	{
+		break;
+	}
+	case opcode::XOR_d8:
+	{
+		break;
+	}
+	case opcode::OR_d8:
+	{
+		break;
+	}
+	case opcode::CP_d8:
+	{
+		break;
+	}
+32010

@@ -1,0 +1,27 @@
+switch(instruction)
+{
+	case opcode::NOP:
+	{
+		break;
+	}
+	case opcode::STOP_0:
+	{
+		break;
+	}
+	case opcode::HALT:
+	{
+		break;
+	}
+	case opcode::PREFIX_CB:
+	{
+		break;
+	}
+	case opcode::DI:
+	{
+		break;
+	}
+	case opcode::EI:
+	{
+		break;
+	}
+32010

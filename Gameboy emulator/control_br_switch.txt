@@ -1,0 +1,123 @@
+switch(instruction)
+{
+	case opcode::JR_r8:
+	{
+		break;
+	}
+	case opcode::JR_NZ_r8:
+	{
+		break;
+	}
+	case opcode::JR_Z_r8:
+	{
+		break;
+	}
+	case opcode::JR_NC_r8:
+	{
+		break;
+	}
+	case opcode::JR_C_r8:
+	{
+		break;
+	}
+	case opcode::RET_NZ:
+	{
+		break;
+	}
+	case opcode::JP_NZ_a16:
+	{
+		break;
+	}
+	case opcode::JP_a16:
+	{
+		break;
+	}
+	case opcode::CALL_NZ_a16:
+	{
+		break;
+	}
+	case opcode::RST_00H:
+	{
+		break;
+	}
+	case opcode::RET_Z:
+	{
+		break;
+	}
+	case opcode::RET:
+	{
+		break;
+	}
+	case opcode::JP_Z_a16:
+	{
+		break;
+	}
+	case opcode::CALL_Z_a16:
+	{
+		break;
+	}
+	case opcode::CALL_a16:
+	{
+		break;
+	}
+	case opcode::RST_08H:
+	{
+		break;
+	}
+	case opcode::RET_NC:
+	{
+		break;
+	}
+	case opcode::JP_NC_a16:
+	{
+		break;
+	}
+	case opcode::CALL_NC_a16:
+	{
+		break;
+	}
+	case opcode::RST_10H:
+	{
+		break;
+	}
+	case opcode::RET_C:
+	{
+		break;
+	}
+	case opcode::RETI:
+	{
+		break;
+	}
+	case opcode::JP_C_a16:
+	{
+		break;
+	}
+	case opcode::CALL_C_a16:
+	{
+		break;
+	}
+	case opcode::RST_18H:
+	{
+		break;
+	}
+	case opcode::RST_20H:
+	{
+		break;
+	}
+	case opcode::JP_iHL:
+	{
+		break;
+	}
+	case opcode::RST_28H:
+	{
+		break;
+	}
+	case opcode::RST_30H:
+	{
+		break;
+	}
+	case opcode::RST_38H:
+	{
+		break;
+	}
+32010

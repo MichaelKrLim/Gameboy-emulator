@@ -1,0 +1,55 @@
+switch(instruction)
+{
+	case opcode::INC_BC:
+	{
+		break;
+	}
+	case opcode::ADD_HL_BC:
+	{
+		break;
+	}
+	case opcode::DEC_BC:
+	{
+		break;
+	}
+	case opcode::INC_DE:
+	{
+		break;
+	}
+	case opcode::ADD_HL_DE:
+	{
+		break;
+	}
+	case opcode::DEC_DE:
+	{
+		break;
+	}
+	case opcode::INC_HL:
+	{
+		break;
+	}
+	case opcode::ADD_HL_HL:
+	{
+		break;
+	}
+	case opcode::DEC_HL:
+	{
+		break;
+	}
+	case opcode::INC_SP:
+	{
+		break;
+	}
+	case opcode::ADD_HL_SP:
+	{
+		break;
+	}
+	case opcode::DEC_SP:
+	{
+		break;
+	}
+	case opcode::ADD_SP_r8:
+	{
+		break;
+	}
+32010

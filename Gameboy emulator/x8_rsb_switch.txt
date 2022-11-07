@@ -1,0 +1,19 @@
+switch(instruction)
+{
+	case opcode::RLCA:
+	{
+		break;
+	}
+	case opcode::RRCA:
+	{
+		break;
+	}
+	case opcode::RLA:
+	{
+		break;
+	}
+	case opcode::RRA:
+	{
+		break;
+	}
+32010

@@ -1,0 +1,343 @@
+switch(instruction)
+{
+	case opcode::LD_iBC_A:
+	{
+		break;
+	}
+	case opcode::LD_B_d8:
+	{
+		break;
+	}
+	case opcode::LD_A_iBC:
+	{
+		break;
+	}
+	case opcode::LD_C_d8:
+	{
+		break;
+	}
+	case opcode::LD_iDE_A:
+	{
+		break;
+	}
+	case opcode::LD_D_d8:
+	{
+		break;
+	}
+	case opcode::LD_A_iDE:
+	{
+		break;
+	}
+	case opcode::LD_E_d8:
+	{
+		break;
+	}
+	case opcode::LD_iHLinc_A:
+	{
+		break;
+	}
+	case opcode::LD_H_d8:
+	{
+		break;
+	}
+	case opcode::LD_A_iHLinc:
+	{
+		break;
+	}
+	case opcode::LD_L_d8:
+	{
+		break;
+	}
+	case opcode::LD_iHL-_A:
+	{
+		break;
+	}
+	case opcode::LD_iHL_d8:
+	{
+		break;
+	}
+	case opcode::LD_A_iHL-:
+	{
+		break;
+	}
+	case opcode::LD_A_d8:
+	{
+		break;
+	}
+	case opcode::LD_B_B:
+	{
+		break;
+	}
+	case opcode::LD_B_C:
+	{
+		break;
+	}
+	case opcode::LD_B_D:
+	{
+		break;
+	}
+	case opcode::LD_B_E:
+	{
+		break;
+	}
+	case opcode::LD_B_H:
+	{
+		break;
+	}
+	case opcode::LD_B_L:
+	{
+		break;
+	}
+	case opcode::LD_B_iHL:
+	{
+		break;
+	}
+	case opcode::LD_B_A:
+	{
+		break;
+	}
+	case opcode::LD_C_B:
+	{
+		break;
+	}
+	case opcode::LD_C_C:
+	{
+		break;
+	}
+	case opcode::LD_C_D:
+	{
+		break;
+	}
+	case opcode::LD_C_E:
+	{
+		break;
+	}
+	case opcode::LD_C_H:
+	{
+		break;
+	}
+	case opcode::LD_C_L:
+	{
+		break;
+	}
+	case opcode::LD_C_iHL:
+	{
+		break;
+	}
+	case opcode::LD_C_A:
+	{
+		break;
+	}
+	case opcode::LD_D_B:
+	{
+		break;
+	}
+	case opcode::LD_D_C:
+	{
+		break;
+	}
+	case opcode::LD_D_D:
+	{
+		break;
+	}
+	case opcode::LD_D_E:
+	{
+		break;
+	}
+	case opcode::LD_D_H:
+	{
+		break;
+	}
+	case opcode::LD_D_L:
+	{
+		break;
+	}
+	case opcode::LD_D_iHL:
+	{
+		break;
+	}
+	case opcode::LD_D_A:
+	{
+		break;
+	}
+	case opcode::LD_E_B:
+	{
+		break;
+	}
+	case opcode::LD_E_C:
+	{
+		break;
+	}
+	case opcode::LD_E_D:
+	{
+		break;
+	}
+	case opcode::LD_E_E:
+	{
+		break;
+	}
+	case opcode::LD_E_H:
+	{
+		break;
+	}
+	case opcode::LD_E_L:
+	{
+		break;
+	}
+	case opcode::LD_E_iHL:
+	{
+		break;
+	}
+	case opcode::LD_E_A:
+	{
+		break;
+	}
+	case opcode::LD_H_B:
+	{
+		break;
+	}
+	case opcode::LD_H_C:
+	{
+		break;
+	}
+	case opcode::LD_H_D:
+	{
+		break;
+	}
+	case opcode::LD_H_E:
+	{
+		break;
+	}
+	case opcode::LD_H_H:
+	{
+		break;
+	}
+	case opcode::LD_H_L:
+	{
+		break;
+	}
+	case opcode::LD_H_iHL:
+	{
+		break;
+	}
+	case opcode::LD_H_A:
+	{
+		break;
+	}
+	case opcode::LD_L_B:
+	{
+		break;
+	}
+	case opcode::LD_L_C:
+	{
+		break;
+	}
+	case opcode::LD_L_D:
+	{
+		break;
+	}
+	case opcode::LD_L_E:
+	{
+		break;
+	}
+	case opcode::LD_L_H:
+	{
+		break;
+	}
+	case opcode::LD_L_L:
+	{
+		break;
+	}
+	case opcode::LD_L_iHL:
+	{
+		break;
+	}
+	case opcode::LD_L_A:
+	{
+		break;
+	}
+	case opcode::LD_iHL_B:
+	{
+		break;
+	}
+	case opcode::LD_iHL_C:
+	{
+		break;
+	}
+	case opcode::LD_iHL_D:
+	{
+		break;
+	}
+	case opcode::LD_iHL_E:
+	{
+		break;
+	}
+	case opcode::LD_iHL_H:
+	{
+		break;
+	}
+	case opcode::LD_iHL_L:
+	{
+		break;
+	}
+	case opcode::LD_iHL_A:
+	{
+		break;
+	}
+	case opcode::LD_A_B:
+	{
+		break;
+	}
+	case opcode::LD_A_C:
+	{
+		break;
+	}
+	case opcode::LD_A_D:
+	{
+		break;
+	}
+	case opcode::LD_A_E:
+	{
+		break;
+	}
+	case opcode::LD_A_H:
+	{
+		break;
+	}
+	case opcode::LD_A_L:
+	{
+		break;
+	}
+	case opcode::LD_A_iHL:
+	{
+		break;
+	}
+	case opcode::LD_A_A:
+	{
+		break;
+	}
+	case opcode::LDH_ia8_A:
+	{
+		break;
+	}
+	case opcode::LD_iC_A:
+	{
+		break;
+	}
+	case opcode::LD_ia16_A:
+	{
+		break;
+	}
+	case opcode::LDH_A_ia8:
+	{
+		break;
+	}
+	case opcode::LD_A_iC:
+	{
+		break;
+	}
+	case opcode::LD_A_ia16:
+	{
+		break;
+	}
+32010

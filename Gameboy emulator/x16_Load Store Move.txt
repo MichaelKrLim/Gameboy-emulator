@@ -1,0 +1,15 @@
+0x01:"LD" "BC","d16"
+0x08:"LD" "(a16)","SP"
+0x11:"LD" "DE","d16"
+0x21:"LD" "HL","d16"
+0x31:"LD" "SP","d16"
+0xc1:"POP" "BC",null
+0xc5:"PUSH" "BC",null
+0xd1:"POP" "DE",null
+0xd5:"PUSH" "DE",null
+0xe1:"POP" "HL",null
+0xe5:"PUSH" "HL",null
+0xf1:"POP" "AF",null
+0xf5:"PUSH" "AF",null
+0xf8:"LD" "HL","SP+r8"
+0xf9:"LD" "SP","HL"
