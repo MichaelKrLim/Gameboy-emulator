@@ -10,92 +10,72 @@
 #include <unordered_map>
 
 
-/*
-void manipulate_json()
-{
-    using json = nlohmann::json;
-    std::ifstream json_file{ R"(C:\Users\Michael\source\repos\Gameboy emulator\Gameboy emulator\opcodes.json)" };
-    json opcode_data = json::parse(json_file);
-
-    std::unordered_map<std::string,std::ofstream> group_files;
-
-    const auto remove_quotes = [](std::string name)
-    {
-        return name.substr(1,name.size()-2);
-    };
-
-    const auto encode_parens = [](std::string name)
-    {
-        if(name.back()==')')
-            return "i"+name.substr(1,name.size()-2);
-        return name;
-    };
-
-    const auto encode_plus = [](std::string name)
-    {
-        if(name.back()=='+')
-            return name.substr(0,name.size()-1)+"inc";
-        return name;
-    };
-
-    const auto encode_operand = [&](auto op)
-    {
-        return encode_plus(encode_parens(remove_quotes(to_string(op)))); 
-    };
-
-    for (const auto& [key, value] : opcode_data["unprefixed"].items())
-    {
-        if (group_files.count(value["group"]) == 0)
-        {
-            auto filename = to_string(value["group"]);
-            for (auto& c : filename)
-                if (c == '/') c = '_';
-
-            group_files[value["group"]] = std::ofstream{ filename.substr(1,filename.size() - 2) + "_switch.txt" };
-
-            group_files[value["group"]]<<"switch(instruction)\n{\n";
-        }
-
-        auto enumerator_name = remove_quotes(to_string(value["mnemonic"]));
-        if(value.contains("operand1"))
-            enumerator_name+="_"+encode_operand(value["operand1"]);
-        if(value.contains("operand2"))
-            enumerator_name+="_"+encode_operand(value["operand2"]);
-
-        group_files[value["group"]] << "\tcase opcode::" << enumerator_name <<":\n\t{\n\t\tbreak;\n\t}\n";
-    }
-
-    for(auto& [_,file]: group_files)
-    {
-        file<<'}\n';
-    }
-}
-*/
-
-
 void test_x8_arithmetic()
 {
     Cpu_state cpu_state;
 
     cpu_state.run(opcode::INC_B);
-
     if ((cpu_state.registers.BC>>8 != 1))
         std::cerr << "You implemented inc wrongly. Shame on you!\n";
 
-    cpu_state.registers.BC = (255<<8);
-    cpu_state.run(opcode::INC_B);
-
-    if ((cpu_state.registers.BC>>8 != 0))
-        std::cerr << "You implemented inc wrongly. Shame on you!\n";
-
-    cpu_state.registers.BC = 0;
+    cpu_state.registers.BC = (1 << 8);
     cpu_state.run(opcode::DEC_B);
-    if (cpu_state.registers.BC >> 8 != 255)
-        std::cerr << "You implemented inc wrongly. Shame on you!\n";
+    if (cpu_state.registers.BC >> 8 != 0)
+        std::cerr << "You implemented dec wrongly. Shame on you!\n";
+
+    cpu_state.registers.accumulator_and_flags = (1 << 8);
+    cpu_state.run(opcode::CPL);
+    if (cpu_state.registers.accumulator_and_flags >> 8 != 0b11111110)
+        std::cerr << "You implemented cpl wrongly. Shame on you!\n";
+
+    cpu_state.registers.BC = (1 << 8);
+    cpu_state.registers.accumulator_and_flags = 0;
+    cpu_state.run(opcode::ADD_A_B);
+    if (cpu_state.registers.accumulator_and_flags >> 8 != 1)
+        std::cerr << "You implemented add wrongly. Shame on you!\n";
+
+    cpu_state.registers.BC = (1 << 8);
+    cpu_state.registers.accumulator_and_flags = 2 << 8;
+    cpu_state.run(opcode::SUB_B);
+    if (cpu_state.registers.accumulator_and_flags >> 8 != 1)
+        std::cerr << "You implemented sub wrongly. Shame on you!\n";
+
+    cpu_state.registers.BC = (1 << 8);
+    cpu_state.registers.accumulator_and_flags = 5<<8;
+    cpu_state.set_flags(Flags::carry);
+    cpu_state.run(opcode::SBC_A_B);
+    if (cpu_state.registers.accumulator_and_flags >> 8 != 3)
+        std::cerr << "You implemented sbc wrongly. Shame on you!\n";
+
 }
 
 int main()
 {
-    test_x8_arithmetic();   
+    //test_x8_arithmetic();   
    
+    std::ifstream in{R"(C:\Users\Michael\Downloads\gb-test-roms-master\gb-test-roms-master\cpu_instrs\individual\06-ld r,r.gb)"};
+   
+    if(!in) std::cerr<<"Failed to load file\n";
+
+    Cpu_state cpu_state;
+    {
+        int pos = 0x0;
+        while(in.read(reinterpret_cast<char*>(&cpu_state.memory[pos++]),1));
+    }    
+
+    cpu_state.registers.program_counter = 0x100;
+    int i = 0;
+    while(true)
+    {
+        //std::cout<<std::hex<<"Instruction at address "<<cpu_state.registers.program_counter<<" is "<<static_cast<int>(cpu_state.memory[cpu_state.registers.program_counter])<<'\n';
+        cpu_state.run(opcode{ cpu_state.memory[cpu_state.registers.program_counter++] });
+
+        if(i==0)
+            std::cin>>i;
+        else
+            --i;
+        //char c;
+        //std::cin>>c;
+
+    }
 }
